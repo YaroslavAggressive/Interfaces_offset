@@ -1,3 +1,5 @@
+import pytest
+
 from DirReader import DirReader
 from Graph import build_graph, Graph
 from GraphIterator import GraphIterator
