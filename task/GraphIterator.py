@@ -12,11 +12,8 @@ class GraphIterator:
         for i in range(len(self.graph.unique_scientists_list)):
             self.quan_of_sequences_for_sqientists.append(self.graph.graph_matrix[i][i])
 
-
-
     def __next__(self):
         return next(self.quan_of_sequences_for_sqientists), next(self.graph.unique_scientists_list)
-
 
     def __iter__(self):
         return self
