@@ -1,17 +1,3 @@
-
-
-
-# def method_wrapper(file):
-#     def printer(func):
-#         def wrapper(*args, **kwargs):
-#             res = func(*args, **kwargs)
-#             file.(res)
-#             file.write("\n")
-#             return res
-#         return wrapper
-#     return printer
-
-
 def print_iter(file_name):
     file = open(file_name, "w")    
     def RealGrapgIterator(our_class):
