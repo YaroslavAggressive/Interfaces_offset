@@ -15,16 +15,6 @@ class DirReader:
                 if format == ".txt":
                     yield sub_dir + LINE_SEPARATOR + path + format
 
-        # for filename in os.listdir(dir_name):
-        #     full_path = dir_name + "/" + filename
-        #     if os.path.isdir(full_path):
-        #         if os.listdir(full_path):
-        #             self.find_correct_files(full_path)
-        #     else:
-        #         path, format = os.path.splitext(full_path)
-        #         if format == ".txt":
-        #             yield path
-
     def __enter__(self):
         return self.find_correct_files(self.dir_path)
 
